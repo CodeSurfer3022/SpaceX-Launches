@@ -1,0 +1,52 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: coral;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    background-color: aqua;
+    height: 95%;
+    width: 95%;
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.App {
+    background-color: dodgerblue;
+    height: 95%;
+    width: 95%;
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    grid-area: footer;
+}
+
