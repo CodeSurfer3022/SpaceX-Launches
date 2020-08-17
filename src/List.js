@@ -1,11 +1,16 @@
 import React from 'react';
+import Launch from './Launch';
 
-function List() {
-    return(
-        <div>
+class List extends React.Component{
 
-        </div>
-    )
+    render(){
+        return(
+            <div>
+                <Launch />
+            </div>
+        )
+    }
+
 }
 
 export default List;

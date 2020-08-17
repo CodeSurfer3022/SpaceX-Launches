@@ -3,7 +3,7 @@ import Option from './Option';
 
 let years = [];
 for(let year = 2006; year <= 2020; year ++) {
-      years.push(<Option key={year} year={year}/>)
+      years.push(<Option key={year} value={year}/>)
 }
 
 function Filters() {
@@ -17,13 +17,13 @@ function Filters() {
             </div>
             <div>
                 Succesful Launch
-                <Option />
-                <Option />
+                <Option value="Yes"/>
+                <Option value="No"/>
             </div>
             <div>
                 Succesful Landing
-                <Option />
-                <Option />
+                <Option value="Yes"/>
+                <Option value="No"/>
             </div>
         </div>
     )
