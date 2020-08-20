@@ -9,21 +9,30 @@ for(let year = 2006; year <= 2020; year ++) {
 function Filters() {
 
     return(
-        <div>
+        <div className="filters">
             Filters
-            <div>
+            <div className="section">
                 Launch Year
-                {years}
+                <hr />
+                <div className="options">
+                    {years}
+                </div>
             </div>
-            <div>
+            <div className="section">
                 Succesful Launch
-                <Option value="Yes"/>
-                <Option value="No"/>
+                <hr />
+                <div className="options">
+                    <Option value="Yes"/>
+                    <Option value="No"/>
+                </div>
             </div>
-            <div>
+            <div className="section">
                 Succesful Landing
-                <Option value="Yes"/>
-                <Option value="No"/>
+                <hr />
+                <div className="options">
+                    <Option value="Yes"/>
+                    <Option value="No"/>
+                </div>
             </div>
         </div>
     )

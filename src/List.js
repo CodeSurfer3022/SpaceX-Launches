@@ -44,7 +44,7 @@ class List extends React.Component{
             )
         }
         return(
-            <div>
+            <div className="list">
                 {this.state.missions}
             </div>
         )

@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: coral;
     height: 100%;
     width: 100%;
@@ -44,9 +45,39 @@ header {
     grid-template-columns: 1fr 5fr;
 }
 
+.filters {
+    display: grid;
+    grid-template-rows: 30px minmax(0, 6fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 10px;
+}
+
+.section {
+    text-align: center;
+    background-color: coral;
+}
+
+hr {
+    margin: 2px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: lightcyan;
+}
+
+.option {
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    background-color: greenyellow;
+}
+
 footer {
-    position: absolute;
-    bottom: 0;
     grid-area: footer;
+    text-align: center;
 }
 
