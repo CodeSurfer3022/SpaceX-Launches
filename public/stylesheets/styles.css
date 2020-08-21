@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100vh;
     width: 100vw;
@@ -5,44 +9,32 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: coral;
+    background-color: lightgray;
     height: 100%;
     width: 100%;
 }
 
 #root {
-    background-color: aqua;
-    height: 95%;
-    width: 95%;
-    position: relative;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%);
+    height: 100%;
+    width: 100%;
 }
 
 .App {
     background-color: dodgerblue;
-    height: 95%;
-    width: 95%;
-    position: relative;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%);
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    overflow: hidden;
 }
 
 header {
-    grid-area: header;
 }
 
 .main {
-    grid-area: main;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    overflow: hidden;
 }
 
 .filters {
@@ -82,6 +74,7 @@ hr {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    overflow-y: scroll;
 }
 
 .launch {
@@ -91,7 +84,6 @@ hr {
 }
 
 footer {
-    grid-area: footer;
     text-align: center;
 }
 
