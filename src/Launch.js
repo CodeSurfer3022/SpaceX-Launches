@@ -2,7 +2,7 @@ import React from 'react';
 
 function Launch(props) {
     return(
-        <div>
+        <div className="launch">
             <br />
             {console.log(props.value)}
             <div>

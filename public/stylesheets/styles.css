@@ -46,6 +46,7 @@ header {
 }
 
 .filters {
+    background-color: deepskyblue;
     display: grid;
     grid-template-rows: 30px minmax(0, 6fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-gap: 10px;
@@ -74,6 +75,19 @@ hr {
     padding: 5px;
     margin: 5px;
     background-color: greenyellow;
+}
+
+.list {
+    background-color: floralwhite;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.launch {
+    background-color: pink;
+    height: 200px;
+    margin: 10px;
 }
 
 footer {
