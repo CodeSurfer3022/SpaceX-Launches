@@ -1,7 +1,7 @@
 import React from 'react';
 import Launch from './Launch';
 
-let url = "https://api.spacexdata.com/v3/launches?limit=2";
+let url = "https://api.spacexdata.com/v3/launches?limit=100";
 
 function getInfo(response) {
     return {
