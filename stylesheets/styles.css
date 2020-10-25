@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: #ececec;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-size: large;
+    padding: 10px 5px;
+}
+
+h3 {
+    font-size: medium;
+    padding: 5px 2px;
+}
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr 30px;
+    overflow: hidden;
+}
+
+header {
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    overflow: hidden;
+}
+
+.filterContainer {
+
+}
+
+.filters {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    padding-bottom: 50px;
+}
+
+.section {
+    text-align: center;
+}
+
+hr {
+    margin: 2px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.option {
+    width: 30%;
+    padding: 5px;
+    margin: 5px 10px;
+    background-color: greenyellow;
+}
+
+.list {
+    display: grid;
+    grid-gap: 10px;
+    margin-right: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    overflow-y: scroll;
+}
+
+.launch {
+    background-color: white;
+    height: 350px;
+}
+
+footer {
+    text-align: center;
+}
+
